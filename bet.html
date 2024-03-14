@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>by Douglas Gavazzoni</title>
+        <link rel="stylesheet" href="bet.css">
+        <script src="bet.js"></script>
+    </head>
+<body>
+    <div id="game-container">
+        <h1>Drive Betting Game</h1>
+        <p>Welcome to the driver betting game! You start with $100. (Relax, the Receita Federal doesn't pick it up)</p>
+        <p id="saldo">Your Current Balance: R$100</p>
+
+        <form id="aposta-form">
+            <label for="aposta">What's your bet? (Minimun R$5)</label>
+            <input type="number" id="aposta" min="5" step="5" required>
+
+            <label for="piloto">Choose a Pilot (1 to 5)</label>
+            <input type="number" id="piloto" min="1" max="5" required>
+
+            <button type="button" onclick="realizarAposta()">Bet</button>
+        </form>
+
+        <p id="resultado"></p>
+
+        <div class="race-track">
+            <div class="car" id="car1"></div>
+            <div class="car2" id="car2"></div>
+            <div class="car3" id="car3"></div>
+            <div class="car4" id="car4"></div>
+            <div class="car5" id="car5"></div>
+            <div class="finish-line"></div>
+        </div>
+
+    </div>
+</body>
+</html>
